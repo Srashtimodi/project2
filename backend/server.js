@@ -34,6 +34,10 @@ function categorizeData(dataArray) {
   return { numbers, alphabets, special_characters };
 }
 
+app.get('/', (req, res) => {
+  res.send('Backend API is running successfully!');
+});
+
 // POST endpoint to parse data
 app.post('/api/parse', (req, res) => {
   try {
