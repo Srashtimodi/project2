@@ -26,7 +26,7 @@ function App() {
       }
 
       // Send request to backend
-      const response = await fetch('http://localhost:5000/api/parse', {
+      const response = await fetch('https://project2-1-3tsw.onrender.com/api/parse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
